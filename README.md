@@ -1,67 +1,123 @@
-# Team Task Manager (SK)
+TEAM TASK MANAGER
 
-Team task tracker — sign up, create workspaces, invite teammates, manage tasks.
+A full-stack team collaboration and task management application where users can create projects, manage tasks, assign teammates, and track progress.
 
-## Folder layout
 
-```
+LIVE LINKS
+
+Frontend:
+https://team-task-manager-sepia-seven.vercel.app
+
+Backend API:
+https://team-task-manager-production-0d38.up.railway.app
+
+
+PROJECT STRUCTURE
+
 SK/
-  backend/    FastAPI service (MongoDB)
-  frontend/   React + Vite UI
-```
+│
+├── backend/      FastAPI Backend
+├── frontend/     React + Vite Frontend
+└── README.txt
 
-## Highlights
 
-- JWT login / signup
-- Admin and member roles
-- Workspaces (projects) with members and per-member project roles
-- Tasks: status (todo / in_progress / done), priority (low / medium / high), assignee, due date
-- Home view with stats and recent tasks
-- Filter tasks by status
+FEATURES
 
-## Stack
+- User Signup & Login
+- JWT Authentication
+- Admin & Member Roles
+- Create and Manage Projects
+- Task Assignment System
+- Task Status Tracking
+- Priority Levels
+- Dashboard Statistics
+- Responsive UI
+- Secure Backend API
+- MongoDB Database Integration
 
-**Frontend**
-- React 18, Vite, Tailwind CSS
-- React Context + `useReducer` for state
-- `fetch` for HTTP
-- `react-icons` for icons
-- `react-hook-form` + `zod` for form validation
 
-**Backend**
-- FastAPI, Uvicorn
-- Motor for async MongoDB
-- Pydantic v2
-- python-jose for JWT, passlib + bcrypt for password hashing
+TECH STACK
 
-## Run it
+Frontend:
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+- React Hook Form
+- Zod
 
-1. Make sure MongoDB is running (default `mongodb://localhost:27017`).
+Backend:
+- FastAPI
+- MongoDB Atlas
+- Motor
+- JWT Authentication
+- Pydantic
+- Uvicorn
 
-2. Boot the backend: see [Backend README](./backend/README.md). Port `8002`.
 
-3. Boot the frontend: see [Frontend README](./frontend/README.md). Opens at `http://localhost:5173`
+DEPLOYMENT
 
-## Test admin (after seeding)
+Frontend Deployment:
+- Vercel
 
-| Field | Value |
-| --- | --- |
-| Email | `sara@example.com` |
-| Password | `sk-password-123` |
-| Role | admin |
+Backend Deployment:
+- Railway
 
-## URLs
+Database:
+- MongoDB Atlas
 
-### Local URLs
 
-- Frontend App: `http://localhost:5173`
-- Backend API: `http://localhost:8002/api`
-- Health Check: `http://localhost:8002/health`
+BACKEND ENVIRONMENT VARIABLES
 
----
+APP_NAME=Team Task Manager
+APP_ENV=production
+PORT=8002
 
-### Live Deployment URLs
+MONGODB_URI=your_mongodb_uri
+MONGODB_DB_NAME=sk_team_task_manager
 
-- Frontend Live App: https://team-task-manager-sepia-seven.vercel.app
-- Backend Live API: https://team-task-manager-production-0d38.up.railway.app/api
-- Backend Health Check: https://team-task-manager-production-0d38.up.railway.app/health
+JWT_SECRET=your_secret_key
+JWT_ALGORITHM=HS256
+JWT_EXPIRES_MINUTES=10080
+
+CLIENT_ORIGIN=https://team-task-manager-sepia-seven.vercel.app
+
+
+LOCAL SETUP
+
+1. Clone Repository
+
+git clone https://github.com/Shreyaa2811/team-task-manager.git
+
+
+2. Backend Setup
+
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+Backend URL:
+http://localhost:8002
+
+
+3. Frontend Setup
+
+cd frontend
+npm install
+npm run dev
+
+Frontend URL:
+http://localhost:5173
+
+
+API HEALTH CHECK
+
+https://team-task-manager-production-0d38.up.railway.app/health
+
+
+AUTHOR
+
+Shreya Chaturvedi
+
+GitHub:
+https://github.com/Shreyaa2811
