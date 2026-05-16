@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { readToken, wipeToken } from '../helpers/tokenStore';
 
-const baseURL = 'http://127.0.0.1:8000/api';
+const baseURL = 'https://team-task-manager-production-0d38.up.railway.app/api';
 
 export const api = axios.create({
   baseURL,
