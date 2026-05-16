@@ -52,6 +52,16 @@ SK/
 
 ## URLs
 
-- App: http://localhost:5175
-- API: http://localhost:8002/api
-- Health: http://localhost:8002/health
+### Local URLs
+
+- Frontend App: `http://localhost:5173`
+- Backend API: `http://localhost:8002/api`
+- Health Check: `http://localhost:8002/health`
+
+---
+
+### Live Deployment URLs
+
+- Frontend Live App: https://team-task-manager-sepia-seven.vercel.app
+- Backend Live API: https://team-task-manager-production-0d38.up.railway.app/api
+- Backend Health Check: https://team-task-manager-production-0d38.up.railway.app/health
