@@ -37,8 +37,10 @@ SK/
 ## Run it
 
 1. Make sure MongoDB is running (default `mongodb://localhost:27017`).
-2. Boot the backend: see [`backend/README.md`](backend/README.md). Port `8002`.
-3. Boot the frontend: see [`frontend/README.md`](frontend/README.md). Opens at http://localhost:5175
+
+2. Boot the backend: see [Backend README](./backend/README.md). Port `8002`.
+
+3. Boot the frontend: see [Frontend README](./frontend/README.md). Opens at `http://localhost:5173`
 
 ## Test admin (after seeding)
 
