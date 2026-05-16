@@ -1,0 +1,82 @@
+/* SK dark dev-tool theme tokens */
+
+.sk-card {
+  background: linear-gradient(180deg, rgba(20, 26, 43, 0.85), rgba(15, 20, 34, 0.85));
+  border: 1px solid rgba(58, 67, 97, 0.45);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.sk-input {
+  background: #0b0f1a;
+  border: 1px solid #262d44;
+  color: #e2e8f0;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: all 0.15s ease;
+}
+.sk-input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+}
+
+.sk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.05s ease, background 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.sk-btn:active { transform: translateY(1px); }
+
+.sk-btn-primary {
+  background: linear-gradient(135deg, #22d3ee, #a78bfa);
+  color: #0b0f1a;
+  font-weight: 600;
+}
+.sk-btn-primary:hover { filter: brightness(1.08); }
+
+.sk-btn-ghost {
+  background: transparent;
+  border-color: #262d44;
+  color: #cbd5e1;
+}
+.sk-btn-ghost:hover { background: #141a2b; }
+
+.sk-btn-danger {
+  background: rgba(244, 63, 94, 0.12);
+  color: #fb7185;
+  border-color: rgba(244, 63, 94, 0.35);
+}
+.sk-btn-danger:hover { background: rgba(244, 63, 94, 0.22); }
+
+.sk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sk-link {
+  color: #67e8f9;
+  text-decoration: none;
+}
+.sk-link:hover { color: #a5f3fc; text-decoration: underline; }
+
+.sk-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(58,67,97,0.6), transparent);
+}
